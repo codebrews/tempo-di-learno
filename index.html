@@ -12,13 +12,26 @@
 <body>
     <h1>Tempo Di Learno</h1>
     <h2>Change the speed of audio files and Youtube videos with greater precision</h2>
-    <label for="youtube">Enter youtube url</label><br>
-    <input type="text" placeholder="Youtube url" id="youtube"><br>
+    <!-- <label for="url">Enter youtube url</label><br>
+    <input type="text" placeholder="Youtube url" id="url"><br>
     <button id="embed">Get Youtube Video</button>
-    <div id="video"></div>
+    <div id="video">
+        <iframe width="560" height="315" src="https://www.youtube.com/embed/-dncRrPnbbE" title="YouTube video player"
+            frameborder="0"
+            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+            allowfullscreen></iframe>
+    </div>
     <input type="number" id="speed">
     <button id="set">Set Speed</button>
-    <p id="current-speed"></p>
+    <p id="current-speed">1</p> -->
+
+    <label for="audio-file">Upload an audio file:</label>
+
+    <input type="file" id="audio-file" name="audio-file" accept="audio/*">
+
+    <button id="upload">Upload Audio file</button>
+
+    <audio controls src="" id="audio-player"></audio>
 
 
     <script src="/scripts/app.js"></script>
